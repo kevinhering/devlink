@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "knowledge sharing tool for development teams",
   "main": "server.js",
+  "engines": {
+    "node": "10.5.0"
+  },
   "scripts": {
     "start": "node server.js",
     "client-start": "npm start --prefix client",
