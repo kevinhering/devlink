@@ -98,7 +98,7 @@ export const addResource = (resourceData, history) => dispatch => {
 // edit resource
 export const editResource = (resourceData, resourceId, history) => dispatch => {
   axios
-    .put(`/api/profile/projects/${resourceId}`, resourceData)
+    .put(`/api/profile/resources/${resourceId}`, resourceData)
     .then(res => {
       dispatch(clearErrors());
       return history.push('/dashboard');

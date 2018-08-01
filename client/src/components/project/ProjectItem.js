@@ -10,7 +10,7 @@ export const ProjectItem = props => {
 
   return (
     <Card className="mt-3">
-      <CardHeader tag="h3">{project.title}</CardHeader>
+      <CardHeader tag="h4">{project.title}</CardHeader>
       <CardBody>
         {project.from && (
           <p className="card-text">
