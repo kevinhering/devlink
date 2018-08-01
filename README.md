@@ -2,6 +2,8 @@
 
 [DevLink](https://devlink-api.herokuapp.com/) a Tool to enable development teams to share knowledge, projects and communicate. It utilizes a node/express API and a react SPA client (more planned).
 
+It's currently a work in progress with a number of improvements coming (authentication, pagination, real-time messaging, search interface improvements and more...)
+
 # DevLink API Basics
 
 ## Routes
