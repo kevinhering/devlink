@@ -34,9 +34,6 @@ router.post('/register', (req, res) => {
   User.findOne({ email: req.body.email })
     .then(user => {
       if (user) {
-        // return Promise.reject(
-        //   new Error('An account has already been registered with this email')
-        // );
         errors.email = 'An account has already been registered with this email';
         return res.status(400).json(errors);
       } else {
@@ -97,7 +94,7 @@ router.post('/login', (req, res) => {
             const payload = { id: user.id, name: user.name, avatar: user.avatar };
 
             jwt.sign(payload, config.getKey(), { expiresIn: '10h' }, (err, token) => {
-              // NOTE: redimentary auth - not suggested for prod!
+              // NOTE: rudimentary auth - not suggested for prod!
               if (err) return console.log(err);
               res.json({
                 success: true,

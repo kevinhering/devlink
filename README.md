@@ -163,3 +163,54 @@ access: private
 
 description: unlike a post
 access: private
+
+# Improvements
+
+## API
+
+Here are a number of incremental improvements that could be made to improve the API
+
+### Tests !!!
+
+- the app really needs unit & integration tests
+
+### authentication
+
+- switch to Google OAuth strategy - (no need to build out password reset functionality or store pwds)
+
+### pagination
+
+- set up default pagination and sort capability in the API to limit the size of the data fetch
+
+### messaging
+
+- use websockets to delivery chat messaging service
+- determing if chat is better within profiles (like emails) or groups by subject
+
+### search
+
+- add search functionality (and make use of tags in project & resource data models)
+
+## React client
+
+### pagination
+
+- set up sorting and/or lazy loading on client for messages (posts) & profiles
+
+### Redux-saga
+
+- move from redux-thunk (promises) to redux-saga (uses generators) to improve code legibility
+
+### search
+
+- add search feature (when API supports it)
+- make tags linkable (to make topical searches easier)
+
+### forms
+
+- Add real-time client-side form validation for better UI
+- Add better UX
+
+### react component abstraction
+
+- look for repeated code and make use of composition in components

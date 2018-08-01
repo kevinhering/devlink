@@ -73,15 +73,6 @@ function validateLoginInput(data) {
   // required params (email & password)
   validateRequiredInput('email', 'password');
 
-  // if (!data.email) {
-  //   errors.email = 'email is required';
-  // }
-
-  // // password validation
-  // if (!data.password) {
-  //   errors.password = 'password is required';
-  // }
-
   return {
     errors,
     isValid: isEmpty(errors)
