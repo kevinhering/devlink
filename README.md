@@ -45,124 +45,124 @@ It's currently a work in progress with a number of improvements coming (authenti
 #### GET api/profile/handle/:handle
 
 - description: get current user profile via handle
-  - access: public
+- access: public
 
 #### GET api/profile/user/:userid
 
 - description: get current user profile via user id
-  - access: public
+- access: public
 
 #### GET api/profile/all
 
 - description: get all profiles
-  - access: public
+- access: public
 
 #### POST api/profile
 
 - description: create or update profile for current (authorized) user
-  - access: private
+- access: private
 
 #### DELETE api/profile/
 
 - description: remove a user & profile
-  - access: private
+- access: private
 
 #### POST api/profile/projects
 
 - description: add a project to profile
-  - access: private
+- access: private
 
 #### GET api/profile/projects/:project_id
 
 - description: retrieve an existing project by id
-  - access: private
+- access: private
 
 #### PUT api/profile/projects/:project_id
 
 - description: edit an existing project
-  - access: private
+- access: private
 
 #### DELETE api/profile/projects/:project_id
 
 - description: remove a project from profile
-  - access: private
+- access: private
 
 #### POST api/profile/resources
 
 - description: add a resource to profile
-  - access: private
+- access: private
 
 #### GET api/profile/resources/:resourceid
 
 - description: retrieve an existing resource
-  - access: private
+- access: private
 
 #### PUT api/profile/resources/:resourceid
 
 - description: edit an existing resource
-  - access: private
+- access: private
 
 #### DELETE api/profile/resources/:resource_id
 
 - description: remove a resource from profile
-  - access: private
+- access: private
 
 ### POSTS ROUTES
 
 #### GET api/posts/test
 
 - description: test post route
-  - access: public
+- access: public
 
 #### POST api/posts
 
 - description: create post
-  - access: private
+- access: private
 
 #### PUT api/posts/:post_id
 
 - description: update existing post
-  - access: private
+- access: private
 
 #### DELETE api/posts/:post_id
 
 - description: delete post
-  - access: private
+- access: private
 
 #### GET api/posts
 
 - description: retrieve all posts (sorted by date)
-  - access: public
+- access: public
 
 #### GET api/posts/:post_id
 
 - description: get specific post (by id)
-  - access: public
+- access: public
 
 #### POST api/posts/comment/:post_id
 
 - description: add a new comment on a post
-  - access: private
+- access: private
 
 #### PUT api/posts/comment/:post_id/:comment_id
 
 - description: edit a comment on a post
-  - access: private
+- access: private
 
 #### DELETE api/posts/comment/:post_id/:comment_id
 
 - description: delete a comment on a post
-  - access: private
+- access: private
 
 #### POST api/posts/like/:post_id
 
 - description: like a post
-  - access: private
+- access: private
 
 #### POST api/posts/unlike/:post_id
 
 - description: unlike a post
-  - access: private
+- access: private
 
 # Improvements
 
