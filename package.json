@@ -1,0 +1,38 @@
+{
+  "name": "devlink",
+  "version": "1.0.0",
+  "description": "knowledge sharing tool for development teams",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "client-start": "npm start --prefix client",
+    "client-install": "npm install --prefix client",
+    "dev": "concurrently \"npm run dev-server\" \"npm run client-start\"",
+    "dev-server": "nodemon server.js",
+    "test": "jest"
+  },
+  "author": "Kevin Hering",
+  "license": "MIT",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "dotenv": "^5.0.1",
+    "express": "^4.16.3",
+    "gravatar": "^1.6.0",
+    "jsonwebtoken": "^8.2.1",
+    "lodash": "^4.17.10",
+    "mongoose": "^5.1.2",
+    "passport": "^0.4.0",
+    "passport-jwt": "^4.0.0",
+    "validator": "^10.2.0"
+  },
+  "devDependencies": {
+    "concurrently": "^3.5.1",
+    "jest": "^23.4.2",
+    "nodemon": "^1.17.5",
+    "puppeteer": "^1.6.1",
+    "supertest": "^3.1.0"
+  },
+  "jest": {
+    "testURL": "http://localhost/"
+  }
+}

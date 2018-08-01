@@ -1,0 +1,61 @@
+# Dependencies
+node_modules/
+
+# environment variables
+.env*
+
+# build artifacts
+build/
+dist/
+
+# addition dev artifacts
+src/fonts/icomoon
+src/fonts/FontAwesome.*
+src/fonts/fontawesome*
+src/css/bootstrap.css
+src/css/ekko-lightbox.css
+src/css/font-awesome.min.css
+src/css/style.css
+src/img/image*
+src/js/bootstrap*
+src/js/ekko*
+src/js/jquery*
+src/js/popper*
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+ memeify-clabs-firebase-key.json
+
+# Compiled binary addons (https://nodejs.org/api/addons.html)
+build/Release
+
+# VS Code settings
+.vscode/
+
+# Optional npm cache directory
+.npm
+
+# Optional eslint cache
+.eslintcache
+
+# Optional REPL history
+.node_repl_history
+
+# Output of 'npm pack'
+*.tgz
+
+# Yarn Integrity file
+.yarn-integrity
+
+# next.js build output
+.next

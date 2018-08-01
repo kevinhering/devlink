@@ -1,0 +1,5 @@
+DB_HOST=enterDBHostName
+DB_USER=enterDBUserName
+DB_PASS=enterDBPwd
+PORT=enterPort
+KEY=enterKey
