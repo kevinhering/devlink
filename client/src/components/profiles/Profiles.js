@@ -10,7 +10,7 @@ import isEmpty from 'lodash/isEmpty';
 import { Row, Container, Col, Button } from 'reactstrap';
 
 // components
-import ProfilesItem from './ProfilesItem.alt';
+import ProfilesItem from './ProfilesItem';
 import Spinner from '../transitions/Spinner';
 
 // action creators
