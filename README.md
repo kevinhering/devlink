@@ -2,132 +2,164 @@
 
 [DevLink](https://devlink-api.herokuapp.com/) a Tool to enable development teams to share knowledge, projects and communicate. It utilizes a node/express API and a react SPA client (more planned).
 
+It's currently a work in progress with a number of improvements coming (authentication, pagination, real-time messaging, search interface improvements and more...)
+
 # DevLink API Basics
 
 ## Routes
 
 ### USER ROUTES
 
-@route GET api/users/test
-@desc test the users route
-@access public
+#### GET api/users/test
 
-@route GET api/users/register
-@desc register a user
-@access public
+description: test the users route
+access: public
 
-@route GET api/users/login
-@desc login & recieve JWT
-@access public
+#### GET api/users/register
 
-@route GET api/users/current
-@desc return current user (using stateless jwt)
-@access private
+description: register a user
+access: public
+
+#### GET api/users/login
+
+description: login & recieve JWT
+access: public
+
+#### GET api/users/current
+
+description: return current user (using stateless jwt)
+access: private
 
 ### PROFILE ROUTES
 
-@route GET api/profile/test
-@desc test profile route
-@access public
+#### GET api/profile/test
 
-@route GET api/profile
-@desc get current user profile
-@access private
+description: test profile route
+access: public
 
-@route GET api/profile/handle/:handle
-@desc get current user profile via handle
-@access public
+#### GET api/profile
 
-@route GET api/profile/user/:userid
-@desc get current user profile via user id
-@access public
+description: get current user profile
+access: private
 
-@route GET api/profile/all
-@desc get all profiles
-@access public
+#### GET api/profile/handle/:handle
 
-@route POST api/profile
-@desc create or update profile for current (authorized) user
-@access private
+description: get current user profile via handle
+access: public
 
-@route DELETE api/profile/
-@desc remove a user & profile
-@access private
+#### GET api/profile/user/:userid
 
-@route POST api/profile/projects
-@desc add a project to profile
-@access private
+description: get current user profile via user id
+access: public
 
-@route GET api/profile/projects/:project_id
-@desc retrieve an existing project by id
-@access private
+#### GET api/profile/all
 
-@route PUT api/profile/projects/:project_id
-@desc edit an existing project
-@access private
+description: get all profiles
+access: public
 
-@route DELETE api/profile/projects/:project_id
-@desc remove a project from profile
-@access private
+#### POST api/profile
 
-@route POST api/profile/resources
-@desc add a resource to profile
-@access private
+description: create or update profile for current (authorized) user
+access: private
 
-@route GET api/profile/resources/:resourceid
-@desc retrieve an existing resource
-@access private
+#### DELETE api/profile/
 
-@route PUT api/profile/resources/:resourceid
-@desc edit an existing resource
-@access private
+description: remove a user & profile
+access: private
 
-@route DELETE api/profile/resources/:resource_id
-@desc remove a resource from profile
-@access private
+#### POST api/profile/projects
+
+description: add a project to profile
+access: private
+
+#### GET api/profile/projects/:project_id
+
+description: retrieve an existing project by id
+access: private
+
+#### PUT api/profile/projects/:project_id
+
+description: edit an existing project
+access: private
+
+#### DELETE api/profile/projects/:project_id
+
+description: remove a project from profile
+access: private
+
+#### POST api/profile/resources
+
+description: add a resource to profile
+access: private
+
+#### GET api/profile/resources/:resourceid
+
+description: retrieve an existing resource
+access: private
+
+#### PUT api/profile/resources/:resourceid
+
+description: edit an existing resource
+access: private
+
+#### DELETE api/profile/resources/:resource_id
+
+description: remove a resource from profile
+access: private
 
 ### POSTS ROUTES
 
-@route GET api/posts/test
-@desc test post route
-@access public
+#### GET api/posts/test
 
-@route POST api/posts
-@desc create post
-@access private
+description: test post route
+access: public
 
-@route PUT api/posts/:post_id
-@desc update existing post
-@access private
+#### POST api/posts
 
-@route DELETE api/posts/:post_id
-@desc delete post
-@access private
+description: create post
+access: private
 
-@route GET api/posts
-@desc retrieve all posts (sorted by date)
-@access public
+#### PUT api/posts/:post_id
 
-@route GET api/posts/:post_id
-@desc get specific post (by id)
-@access public
+description: update existing post
+access: private
 
-@route POST api/posts/comment/:post_id
-@desc add a new comment on a post
-@access private
+#### DELETE api/posts/:post_id
 
-@route PUT api/posts/comment/:post_id/:comment_id
-@desc edit a comment on a post
-@access private
+description: delete post
+access: private
 
-@route DELETE api/posts/comment/:post_id/:comment_id
-@desc delete a comment on a post
-@access private
+#### GET api/posts
 
-@route POST api/posts/like/:post_id
-@desc like a post
-@access private
+description: retrieve all posts (sorted by date)
+access: public
 
-@route POST api/posts/unlike/:post_id
-@desc unlike a post
-@access private
+#### GET api/posts/:post_id
+
+description: get specific post (by id)
+access: public
+
+#### POST api/posts/comment/:post_id
+
+description: add a new comment on a post
+access: private
+
+#### PUT api/posts/comment/:post_id/:comment_id
+
+description: edit a comment on a post
+access: private
+
+#### DELETE api/posts/comment/:post_id/:comment_id
+
+description: delete a comment on a post
+access: private
+
+#### POST api/posts/like/:post_id
+
+description: like a post
+access: private
+
+#### POST api/posts/unlike/:post_id
+
+description: unlike a post
+access: private
