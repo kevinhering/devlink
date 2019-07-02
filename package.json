@@ -20,21 +20,21 @@
   "dependencies": {
     "bcryptjs": "^2.4.3",
     "dotenv": "^5.0.1",
-    "express": "^4.16.4",
+    "express": "^4.17.1",
     "gravatar": "^1.8.0",
-    "jsonwebtoken": "^8.4.0",
+    "jsonwebtoken": "^8.5.1",
     "lodash": "^4.17.11",
-    "mongoose": "^5.3.14",
+    "mongoose": "^5.6.2",
     "passport": "^0.4.0",
     "passport-jwt": "^4.0.0",
-    "validator": "^10.9.0"
+    "validator": "^10.11.0"
   },
   "devDependencies": {
     "concurrently": "^3.6.1",
     "jest": "^23.6.0",
-    "nodemon": "^1.18.7",
-    "puppeteer": "^1.11.0",
-    "supertest": "^3.3.0"
+    "nodemon": "^1.19.1",
+    "puppeteer": "^1.18.1",
+    "supertest": "^3.4.2"
   },
   "jest": {
     "testURL": "http://localhost/"
