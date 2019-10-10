@@ -23,8 +23,8 @@
     "express": "^4.17.1",
     "gravatar": "^1.8.0",
     "jsonwebtoken": "^8.5.1",
-    "lodash": "^4.17.11",
-    "mongoose": "^5.6.2",
+    "lodash": "^4.17.15",
+    "mongoose": "^5.7.4",
     "passport": "^0.4.0",
     "passport-jwt": "^4.0.0",
     "validator": "^10.11.0"
@@ -32,8 +32,8 @@
   "devDependencies": {
     "concurrently": "^3.6.1",
     "jest": "^23.6.0",
-    "nodemon": "^1.19.1",
-    "puppeteer": "^1.18.1",
+    "nodemon": "^1.19.3",
+    "puppeteer": "^1.20.0",
     "supertest": "^3.4.2"
   },
   "jest": {
