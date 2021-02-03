@@ -33,7 +33,7 @@
     "concurrently": "^3.6.1",
     "jest": "^23.6.0",
     "nodemon": "^1.19.3",
-    "puppeteer": "^1.20.0",
+    "puppeteer": "^6.0.0",
     "supertest": "^3.4.2"
   },
   "jest": {
